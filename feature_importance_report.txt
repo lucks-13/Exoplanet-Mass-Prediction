@@ -1,0 +1,26 @@
+FEATURE IMPORTANCE ANALYSIS REPORT
+==================================================
+
+TOP 15 MOST IMPORTANT FEATURES (PERMUTATION IMPORTANCE)
+--------------------------------------------------
+ 1. escape_velocity               : 536632.526915
+ 2. stellar_planet_mass_ratio     : 320637.544310
+ 3. mass_radius_ratio             : 255095.519959
+ 4. hill_sphere                   : 52658.515515
+ 5. pl_rade_cubed                 : 34922.857223
+ 6. orbital_velocity              : 19472.084230
+ 7. radius_period_interaction     : 18495.047266
+ 8. pl_orbper                     : 18189.407015
+ 9. pl_rade_squared               : 15347.368968
+10. log_orbital_period            : 13862.904453
+11. pl_orbper_cubed               : 13453.365509
+12. pl_rade                       : 12977.440545
+13. pl_orbsmax                    : 4326.413329
+14. disc_year                     : 3588.421384
+15. discoverymethod               : 2839.320730
+
+FEATURE SELECTION SUMMARY
+------------------------------
+Total Original Features: 35
+Selected Features: 20
+Selection Ratio: 0.57

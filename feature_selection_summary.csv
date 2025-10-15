@@ -1,0 +1,2 @@
+total_original_features,selected_features_univariate,selection_ratio,selection_method,k_value
+35,20,0.5714285714285714,SelectKBest with f_regression,20

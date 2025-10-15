@@ -1,0 +1,37 @@
+{
+  "analysis_info": {
+    "target_variable": "pl_bmasse",
+    "dataset_shapes": {
+      "original": [
+        38973,
+        354
+      ],
+      "clean": [
+        6905,
+        15
+      ],
+      "engineered": [
+        6905,
+        36
+      ]
+    },
+    "train_test_split": {
+      "train_size": 5524,
+      "test_size": 1381,
+      "split_ratio": 0.8
+    }
+  },
+  "model_summary": {
+    "total_models_tested": 11,
+    "scaling_methods": [
+      "standard",
+      "minmax",
+      "robust",
+      "power",
+      "quantile"
+    ],
+    "best_individual_model": "RandomForest",
+    "best_ensemble_model": "Voting",
+    "recommended_model": "Best_Ensemble"
+  }
+}

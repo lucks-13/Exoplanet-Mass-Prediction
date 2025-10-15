@@ -1,0 +1,3 @@
+model_name,model_type,estimated_parameters,features_used,relative_training_time,relative_memory_usage
+Best_Individual,Tree Ensemble,3500,35,Medium,3500
+Best_Ensemble,Ensemble,175,35,High,105

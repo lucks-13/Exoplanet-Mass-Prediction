@@ -1,0 +1,74 @@
+EXPORT SUMMARY REPORT
+==================================================
+
+Export Status: Completed
+Total Files Exported: 49
+Total Size: 59.83 MB
+
+Export Categories:
+--------------------
+- Dataset Info
+- Correlation Analysis
+- Feature Engineering
+- Model Results
+- Feature Importance
+- Ensemble Results
+- Cross-Validation
+- Predictions
+- Statistical Tests
+- Model Complexity
+- Final Recommendations
+- JSON Data
+- Pickle Data
+
+Detailed File List:
+--------------------
+dataset_information.csv                       239 bytes
+dataset_information.txt                       753 bytes
+missing_values_analysis.csv                   937 bytes
+target_variable_statistics.csv                135 bytes
+correlation_matrix.csv                       4085 bytes
+target_correlations.csv                       388 bytes
+discovery_method_distribution.csv             254 bytes
+mass_by_discovery_method.csv                  729 bytes
+yearly_discoveries.csv                        300 bytes
+correlation_analysis_summary.txt              292 bytes
+engineered_features_list.csv                  592 bytes
+features_statistics_before_engineering.csv      897 bytes
+features_statistics_after_engineering.csv     2599 bytes
+scaling_methods_used.csv                      171 bytes
+model_performance_comparison.csv             6162 bytes
+best_models_per_scaler.csv                    335 bytes
+model_configurations.json                    1897 bytes
+permutation_importance.csv                   1861 bytes
+builtin_feature_importance.csv               1267 bytes
+feature_selection_summary.csv                 152 bytes
+selected_features_list.csv                    317 bytes
+ensemble_model_performance.csv                171 bytes
+individual_vs_ensemble_metrics.csv            433 bytes
+cross_validation_detailed_results.csv        1940 bytes
+cross_validation_summary.csv                  456 bytes
+predictions_and_residuals.csv              165693 bytes
+dataset_split_info.csv                         75 bytes
+prediction_intervals.csv                       61 bytes
+statistical_diagnostic_tests.csv              219 bytes
+anova_test_results.csv                         96 bytes
+model_complexity_analysis.csv                 191 bytes
+performance_complexity_tradeoff.csv           273 bytes
+model_recommendations.csv                     326 bytes
+executive_summary.csv                         257 bytes
+comprehensive_model_report.txt               1192 bytes
+feature_importance_report.txt                1059 bytes
+analysis_report.html                         5093 bytes
+model_results_complete.json                 17118 bytes
+cross_validation_results.json                2633 bytes
+feature_analysis_complete.json               2312 bytes
+analysis_metadata.json                        659 bytes
+trained_models.pkl                       59935721 bytes
+scalers.pkl                                294218 bytes
+feature_selection.pkl                        1797 bytes
+numpy_arrays.pkl                          2011794 bytes
+analysis_results.pkl                        41074 bytes
+detailed_error_analysis.csv                222333 bytes
+hyperparameter_optimization_results.csv      6781 bytes
+learning_curve_analysis.csv                  2070 bytes

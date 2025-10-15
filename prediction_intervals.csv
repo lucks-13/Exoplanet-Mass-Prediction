@@ -1,0 +1,4 @@
+confidence_level,interval_range
+90%,1.645
+95%,1.96
+99%,2.576

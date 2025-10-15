@@ -1,0 +1,7 @@
+category,metric,value
+Dataset,Total Features,35
+Dataset,Important Features,0
+Best Individual Model,Model Name,RandomForest
+Best Individual Model,Test R2,0.9727895392794362
+Best Ensemble Model,Model Name,Voting
+Best Ensemble Model,Test R2,0.9742818104986971

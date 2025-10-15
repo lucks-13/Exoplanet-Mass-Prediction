@@ -1,0 +1,11 @@
+{
+  "total_features": 35,
+  "selected_features": "Index(['pl_rade', 'pl_orbsmax', 'pl_eqt', 'st_mass', 'st_rad', 'st_age',\n       'pl_dens', 'discoverymethod', 'mass_radius_ratio', 'orbital_velocity',\n       'escape_velocity', 'hill_sphere', 'stellar_age_category',\n       'planet_star_temp_ratio', 'log_orbital_period', 'sqrt_orbital_distance',\n       'mass_temp_interaction', 'stellar_mass_metallicity', 'pl_rade_squared',\n       'st_mass_squared'],\n      dtype='object')",
+  "correlation_analysis": {
+    "target_correlations": "{'st_mass': 0.2790035984614243, 'st_rad': 0.2402860783508302, 'pl_rade': 0.16772168876960808, 'st_age': 0.14119450812024512, 'pl_orbsmax': 0.11723007077294396, 'pl_dens': 0.11318283275243485, 'pl_eqt': 0.1094203745815153, 'st_teff': 0.06592162823840124, 'disc_year': 0.03577642182120982, 'st_dens': 0.034328079797785536, 'pl_orbper': 0.012739040504939075, 'sy_dist': 0.005830282393455756, 'st_met': 0.003929443620619878}",
+    "top_5_correlations": "{'st_mass': 0.2790035984614243, 'st_rad': 0.2402860783508302, 'pl_rade': 0.16772168876960808, 'st_age': 0.14119450812024512, 'pl_orbsmax': 0.11723007077294396}"
+  },
+  "permutation_importance": {
+    "top_10_features": "[{'feature': 'escape_velocity', 'importance_mean': 536632.5269145443, 'importance_std': 20769.91856129144}, {'feature': 'stellar_planet_mass_ratio', 'importance_mean': 320637.5443098626, 'importance_std': 9340.045918717702}, {'feature': 'mass_radius_ratio', 'importance_mean': 255095.51995947558, 'importance_std': 17452.084580508934}, {'feature': 'hill_sphere', 'importance_mean': 52658.515515187144, 'importance_std': 3464.9465383715783}, {'feature': 'pl_rade_cubed', 'importance_mean': 34922.857222838014, 'importance_std': 545.5408768553707}, {'feature': 'orbital_velocity', 'importance_mean': 19472.084229925127, 'importance_std': 3446.740600307287}, {'feature': 'radius_period_interaction', 'importance_mean': 18495.047265668454, 'importance_std': 2110.9307273410855}, {'feature': 'pl_orbper', 'importance_mean': 18189.40701516498, 'importance_std': 1086.7941876041107}, {'feature': 'pl_rade_squared', 'importance_mean': 15347.368968119757, 'importance_std': 1355.9046760358472}, {'feature': 'log_orbital_period', 'importance_mean': 13862.904452596142, 'importance_std': 1428.8371828977954}]"
+  }
+}

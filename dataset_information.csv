@@ -1,0 +1,2 @@
+original_shape,clean_shape,engineered_shape,missing_values_original,missing_values_clean,target_variable,numeric_features,categorical_features,relevant_features_selected
+"(38973, 354)","(6905, 15)","(6905, 36)",6450117,0,pl_bmasse,14,1,15

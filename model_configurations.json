@@ -1,0 +1,46 @@
+{
+  "LinearRegression": {
+    "model_type": "LinearRegression",
+    "parameters_tested": "{}"
+  },
+  "Ridge": {
+    "model_type": "Ridge",
+    "parameters_tested": "{'alpha': [0.1, 1, 10, 100], 'solver': ['auto', 'lsqr']}"
+  },
+  "Lasso": {
+    "model_type": "Lasso",
+    "parameters_tested": "{'alpha': [0.01, 0.1, 1, 10], 'max_iter': [1000]}"
+  },
+  "ElasticNet": {
+    "model_type": "ElasticNet",
+    "parameters_tested": "{'alpha': [0.01, 0.1, 1], 'l1_ratio': [0.3, 0.5, 0.7], 'max_iter': [1000]}"
+  },
+  "DecisionTree": {
+    "model_type": "DecisionTreeRegressor",
+    "parameters_tested": "{'max_depth': [5, 10, None], 'min_samples_split': [2, 10], 'min_samples_leaf': [1, 5], 'max_features': ['auto', 'sqrt']}"
+  },
+  "RandomForest": {
+    "model_type": "RandomForestRegressor",
+    "parameters_tested": "{'n_estimators': [50, 100], 'max_depth': [10, None], 'min_samples_split': [2, 10], 'min_samples_leaf': [1, 4], 'max_features': ['auto', 'sqrt']}"
+  },
+  "GradientBoosting": {
+    "model_type": "GradientBoostingRegressor",
+    "parameters_tested": "{'n_estimators': [50, 100], 'learning_rate': [0.1, 0.2], 'max_depth': [3, 5], 'subsample': [0.9], 'max_features': ['sqrt']}"
+  },
+  "AdaBoost": {
+    "model_type": "AdaBoostRegressor",
+    "parameters_tested": "{'n_estimators': [50, 100], 'learning_rate': [0.1, 1.0], 'loss': ['linear']}"
+  },
+  "SVR": {
+    "model_type": "SVR",
+    "parameters_tested": "{'C': [1, 10], 'gamma': ['scale', 0.1], 'kernel': ['rbf'], 'epsilon': [0.1]}"
+  },
+  "KNN": {
+    "model_type": "KNeighborsRegressor",
+    "parameters_tested": "{'n_neighbors': [5, 10, 15], 'weights': ['uniform', 'distance'], 'algorithm': ['auto'], 'p': [2]}"
+  },
+  "MLP": {
+    "model_type": "MLPRegressor",
+    "parameters_tested": "{'hidden_layer_sizes': [(50,), (100,)], 'activation': ['relu'], 'alpha': [0.001, 0.01], 'learning_rate': ['adaptive'], 'solver': ['adam']}"
+  }
+}

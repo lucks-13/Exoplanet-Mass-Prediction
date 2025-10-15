@@ -1,0 +1,45 @@
+EXOPLANET MASS PREDICTION - COMPREHENSIVE MODEL ANALYSIS REPORT
+================================================================================
+
+DATASET OVERVIEW
+----------------------------------------
+Original Dataset Shape: (38973, 354)
+Clean Dataset Shape: (6905, 15)
+Engineered Dataset Shape: (6905, 36)
+Target Variable: pl_bmasse
+Training Samples: 5524
+Test Samples: 1381
+
+FEATURE ENGINEERING SUMMARY
+----------------------------------------
+Original Features: 15
+Engineered Features: 36
+New Features Added: 21
+Selected Features: 20
+
+MODEL PERFORMANCE SUMMARY
+----------------------------------------
+Best Individual Model: RandomForest
+Best Scaler: power
+Test R²: 0.9728
+Test RMSE: 234.9359
+Test MAE: 68.4624
+
+Best Ensemble Model: Voting
+Ensemble Test R²: 0.9743
+Ensemble Test RMSE: 228.4029
+Ensemble Test MAE: 62.8955
+
+CROSS-VALIDATION RESULTS
+----------------------------------------
+Best_Individual:
+  KFold_5: R² = 0.9337 ± 0.0448
+  KFold_10: R² = 0.9445 ± 0.0519
+Best_Ensemble:
+  KFold_5: R² = 0.9354 ± 0.0445
+  KFold_10: R² = 0.9450 ± 0.0535
+
+FINAL RECOMMENDATIONS
+----------------------------------------
+Recommended Model: Best_Ensemble
+Recommendation Score: 0.9330

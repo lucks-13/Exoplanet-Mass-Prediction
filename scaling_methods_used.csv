@@ -1,0 +1,6 @@
+scaler_name,scaler_type,features_scaled
+standard,StandardScaler,35
+minmax,MinMaxScaler,35
+robust,RobustScaler,35
+power,PowerTransformer,35
+quantile,QuantileTransformer,35

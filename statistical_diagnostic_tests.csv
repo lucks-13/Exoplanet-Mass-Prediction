@@ -1,0 +1,4 @@
+test_name,statistic,p_value,interpretation
+Jarque-Bera Individual,1978202.9668716402,0.0,Non-normal
+Jarque-Bera Ensemble,2252507.4629343734,0.0,Non-normal
+Durbin-Watson Individual,1.7848807404063431,,No autocorrelation

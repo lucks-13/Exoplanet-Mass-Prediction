@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exoplanet Mass Prediction Analysis Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; border-bottom: 1px solid #bdc3c7; padding-bottom: 5px; margin-top: 30px; }
+        h3 { color: #2980b9; }
+        .metric-box { background-color: #ecf0f1; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #3498db; }
+        .performance-high { border-left-color: #27ae60; }
+        .performance-medium { border-left-color: #f39c12; }
+        .performance-low { border-left-color: #e74c3c; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .summary-stats { display: flex; justify-content: space-around; flex-wrap: wrap; }
+        .stat-item { text-align: center; margin: 10px; }
+        .stat-value { font-size: 24px; font-weight: bold; color: #2c3e50; }
+        .stat-label { color: #7f8c8d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exoplanet Mass Prediction Analysis Report</h1>
+
+        <h2>Executive Summary</h2>
+        <div class="summary-stats">
+            <div class="stat-item">
+                <div class="stat-value">35</div>
+                <div class="stat-label">Total Features</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">5524</div>
+                <div class="stat-label">Training Samples</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">1381</div>
+                <div class="stat-label">Test Samples</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">0.974</div>
+                <div class="stat-label">Best R² Score</div>
+            </div>
+        </div>
+
+        <h2>Dataset Information</h2>
+        <div class="metric-box">
+            <strong>Original Dataset Shape:</strong> (38973, 354)<br>
+            <strong>Clean Dataset Shape:</strong> (6905, 15)<br>
+            <strong>Engineered Features:</strong> 36<br>
+            <strong>Target Variable:</strong> pl_bmasse
+        </div>
+
+        <h2>Best Model Performance</h2>
+        <div class="metric-box performance-high">
+            <h3>Individual Model: RandomForest</h3>
+            <strong>Scaler:</strong> power<br>
+            <strong>Test R²:</strong> 0.9728<br>
+            <strong>Test RMSE:</strong> 234.9359<br>
+            <strong>Test MAE:</strong> 68.4624
+        </div>
+
+        <div class="metric-box performance-high">
+            <h3>Ensemble Model: Voting</h3>
+            <strong>Test R²:</strong> 0.9743<br>
+            <strong>Test RMSE:</strong> 228.4029<br>
+            <strong>Test MAE:</strong> 62.8955
+        </div>
+
+        <h2>Feature Importance (Top 10)</h2>
+        <table>
+            <thead>
+                <tr><th>Rank</th><th>Feature Name</th><th>Importance Score</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>escape_velocity</td><td>536632.526915</td></tr><tr><td>2</td><td>stellar_planet_mass_ratio</td><td>320637.544310</td></tr><tr><td>3</td><td>mass_radius_ratio</td><td>255095.519959</td></tr><tr><td>4</td><td>hill_sphere</td><td>52658.515515</td></tr><tr><td>5</td><td>pl_rade_cubed</td><td>34922.857223</td></tr><tr><td>6</td><td>orbital_velocity</td><td>19472.084230</td></tr><tr><td>7</td><td>radius_period_interaction</td><td>18495.047266</td></tr><tr><td>8</td><td>pl_orbper</td><td>18189.407015</td></tr><tr><td>9</td><td>pl_rade_squared</td><td>15347.368968</td></tr><tr><td>10</td><td>log_orbital_period</td><td>13862.904453</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Model Comparison</h2>
+        <table>
+            <thead>
+                <tr><th>Model</th><th>R² Score</th><th>RMSE</th><th>Complexity</th></tr>
+            </thead>
+            <tbody>
+                
+<tr><td>Individual (RandomForest)</td><td>0.9728</td><td>234.9359</td><td>Medium</td></tr>
+<tr><td>Ensemble (Voting)</td><td>0.9743</td><td>228.4029</td><td>High</td></tr>
+
+            </tbody>
+        </table>
+
+        <h2>Conclusions and Recommendations</h2>
+        <div class="metric-box">
+            <h3>Recommended Model: Best_Ensemble</h3>
+            <p>Based on comprehensive analysis considering performance, stability, and complexity, the recommended model provides the best balance for exoplanet mass prediction tasks.</p>
+            <p><strong>Performance Level:</strong> Excellent</p>
+            <p><strong>Model explains 97.4% of target variance</strong></p>
+        </div>
+    </div>
+</body>
+</html>

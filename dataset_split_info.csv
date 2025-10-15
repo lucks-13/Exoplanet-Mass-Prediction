@@ -1,0 +1,3 @@
+dataset_split,sample_count,percentage
+Training,5524,80.0
+Testing,1381,20.0

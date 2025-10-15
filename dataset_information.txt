@@ -1,0 +1,17 @@
+DATASET INFORMATION REPORT
+==================================================
+
+Original Shape: (38973, 354)
+Clean Shape: (6905, 15)
+Engineered Shape: (6905, 36)
+Missing Values Original: 6450117
+Missing Values Clean: 0
+Target Variable: pl_bmasse
+Numeric Features: 14
+Categorical Features: 1
+Relevant Features Selected: 15
+
+Feature Lists:
+Relevant Features: ['pl_bmasse', 'pl_rade', 'pl_orbper', 'pl_orbsmax', 'pl_eqt', 'st_mass', 'st_rad', 'st_teff', 'st_met', 'st_age', 'st_dens', 'pl_dens', 'discoverymethod', 'disc_year', 'sy_dist']
+Numeric Columns: ['pl_bmasse', 'pl_rade', 'pl_orbper', 'pl_orbsmax', 'pl_eqt', 'st_mass', 'st_rad', 'st_teff', 'st_met', 'st_age', 'st_dens', 'pl_dens', 'disc_year', 'sy_dist']
+Categorical Columns: ['discoverymethod']

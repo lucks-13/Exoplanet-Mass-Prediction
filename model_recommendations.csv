@@ -1,0 +1,3 @@
+model_name,final_score,r2_score,stability_score,complexity_penalty,performance_weight,stability_weight,simplicity_weight
+Best_Individual,0.8689655834180302,0.9336625748167522,0.9551527210191891,0.2222222222222222,0.6,0.3,0.1
+Best_Ensemble,0.9330063096184472,0.9354279619097925,0.9554771649794942,0.851063829787234,0.6,0.3,0.1

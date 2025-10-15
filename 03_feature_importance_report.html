@@ -1,0 +1,135 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Feature Importance Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .header { background-color: #f0f0f0; padding: 10px; border-radius: 5px; }
+            .section { margin: 20px 0; }
+            table { border-collapse: collapse; width: 100%; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            .metric { background-color: #e8f4fd; padding: 5px; margin: 5px 0; border-radius: 3px; }
+        </style>
+    </head>
+    <body>
+        <div class='header'><h1>Feature Importance Analysis</h1></div>
+            <div class='section'>
+                <h2>Top 20 Most Important Features</h2>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>feature</th>
+      <th>importance_mean</th>
+      <th>importance_std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>escape_velocity</td>
+      <td>536632.526915</td>
+      <td>20769.918561</td>
+    </tr>
+    <tr>
+      <td>stellar_planet_mass_ratio</td>
+      <td>320637.544310</td>
+      <td>9340.045919</td>
+    </tr>
+    <tr>
+      <td>mass_radius_ratio</td>
+      <td>255095.519959</td>
+      <td>17452.084581</td>
+    </tr>
+    <tr>
+      <td>hill_sphere</td>
+      <td>52658.515515</td>
+      <td>3464.946538</td>
+    </tr>
+    <tr>
+      <td>pl_rade_cubed</td>
+      <td>34922.857223</td>
+      <td>545.540877</td>
+    </tr>
+    <tr>
+      <td>orbital_velocity</td>
+      <td>19472.084230</td>
+      <td>3446.740600</td>
+    </tr>
+    <tr>
+      <td>radius_period_interaction</td>
+      <td>18495.047266</td>
+      <td>2110.930727</td>
+    </tr>
+    <tr>
+      <td>pl_orbper</td>
+      <td>18189.407015</td>
+      <td>1086.794188</td>
+    </tr>
+    <tr>
+      <td>pl_rade_squared</td>
+      <td>15347.368968</td>
+      <td>1355.904676</td>
+    </tr>
+    <tr>
+      <td>log_orbital_period</td>
+      <td>13862.904453</td>
+      <td>1428.837183</td>
+    </tr>
+    <tr>
+      <td>pl_orbper_cubed</td>
+      <td>13453.365509</td>
+      <td>348.198816</td>
+    </tr>
+    <tr>
+      <td>pl_rade</td>
+      <td>12977.440545</td>
+      <td>438.833437</td>
+    </tr>
+    <tr>
+      <td>pl_orbsmax</td>
+      <td>4326.413329</td>
+      <td>378.083514</td>
+    </tr>
+    <tr>
+      <td>disc_year</td>
+      <td>3588.421384</td>
+      <td>83.884842</td>
+    </tr>
+    <tr>
+      <td>discoverymethod</td>
+      <td>2839.320730</td>
+      <td>1984.938951</td>
+    </tr>
+    <tr>
+      <td>sqrt_orbital_distance</td>
+      <td>2630.813900</td>
+      <td>275.857844</td>
+    </tr>
+    <tr>
+      <td>sy_dist</td>
+      <td>1920.475622</td>
+      <td>946.702157</td>
+    </tr>
+    <tr>
+      <td>distance_category</td>
+      <td>1869.493052</td>
+      <td>300.243570</td>
+    </tr>
+    <tr>
+      <td>st_teff</td>
+      <td>1723.525257</td>
+      <td>374.303844</td>
+    </tr>
+    <tr>
+      <td>pl_eqt</td>
+      <td>1261.423783</td>
+      <td>105.450130</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+            
+    </body>
+    </html>
+    

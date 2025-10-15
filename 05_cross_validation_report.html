@@ -1,0 +1,70 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Cross-Validation Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .header { background-color: #f0f0f0; padding: 10px; border-radius: 5px; }
+            .section { margin: 20px 0; }
+            table { border-collapse: collapse; width: 100%; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            .metric { background-color: #e8f4fd; padding: 5px; margin: 5px 0; border-radius: 3px; }
+        </style>
+    </head>
+    <body>
+        <div class='header'><h1>Cross-Validation Results</h1></div>
+            <div class='section'>
+                <h2>Cross-Validation Summary</h2>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>CV_Method</th>
+      <th>R2_Mean</th>
+      <th>R2_Std</th>
+      <th>MSE_Mean</th>
+      <th>MSE_Std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Best_Individual</td>
+      <td>KFold_5</td>
+      <td>0.9337</td>
+      <td>0.0448</td>
+      <td>147925.1173</td>
+      <td>104414.2192</td>
+    </tr>
+    <tr>
+      <td>Best_Individual</td>
+      <td>KFold_10</td>
+      <td>0.9445</td>
+      <td>0.0519</td>
+      <td>137043.8477</td>
+      <td>152686.2595</td>
+    </tr>
+    <tr>
+      <td>Best_Ensemble</td>
+      <td>KFold_5</td>
+      <td>0.9354</td>
+      <td>0.0445</td>
+      <td>144201.4399</td>
+      <td>103384.8731</td>
+    </tr>
+    <tr>
+      <td>Best_Ensemble</td>
+      <td>KFold_10</td>
+      <td>0.9450</td>
+      <td>0.0535</td>
+      <td>136568.4073</td>
+      <td>157086.9297</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+            
+    </body>
+    </html>
+    

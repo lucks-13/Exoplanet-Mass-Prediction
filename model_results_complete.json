@@ -1,0 +1,452 @@
+{
+  "standard": {
+    "LinearRegression": {
+      "train_mse": "264567.2828286869",
+      "test_mse": "2978135.061467624",
+      "train_r2": "0.8761259535702411",
+      "test_r2": "-0.4681872111287264",
+      "cv_mse": 1.3493522292889352e+18,
+      "best_params": "{}"
+    },
+    "Ridge": {
+      "train_mse": "283125.9495777188",
+      "test_mse": "250468.22939658488",
+      "train_r2": "0.867436530139028",
+      "test_r2": "0.8765219697548228",
+      "cv_mse": 667305.4957084289,
+      "best_params": "{'solver': 'auto', 'alpha': 100}"
+    },
+    "Lasso": {
+      "train_mse": "296290.8817766689",
+      "test_mse": "245148.98412502074",
+      "train_r2": "0.8612725275268329",
+      "test_r2": "0.87914429806411",
+      "cv_mse": 542266.8326523508,
+      "best_params": "{'max_iter': 1000, 'alpha': 10}"
+    },
+    "ElasticNet": {
+      "train_mse": "306275.0320228333",
+      "test_mse": "261258.4335919533",
+      "train_r2": "0.8565978108425485",
+      "test_r2": "0.8712025200058579",
+      "cv_mse": 543981.5938216787,
+      "best_params": "{'max_iter': 1000, 'l1_ratio': 0.3, 'alpha': 0.1}"
+    },
+    "DecisionTree": {
+      "train_mse": "182054.2410231087",
+      "test_mse": "244013.3864364951",
+      "train_r2": "0.9147596964215947",
+      "test_r2": "0.8797041349985905",
+      "cv_mse": 294450.34874453093,
+      "best_params": "{'min_samples_split': 10, 'min_samples_leaf': 5, 'max_features': 'sqrt', 'max_depth': 10}"
+    },
+    "RandomForest": {
+      "train_mse": "21219.087679995035",
+      "test_mse": "55237.116448969275",
+      "train_r2": "0.9900649308396502",
+      "test_r2": "0.9727687205999181",
+      "cv_mse": 166781.04120109245,
+      "best_params": "{'n_estimators': 50, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 10}"
+    },
+    "GradientBoosting": {
+      "train_mse": "10247.544729847841",
+      "test_mse": "99800.44985406412",
+      "train_r2": "0.9952019583900018",
+      "test_r2": "0.9507994966257767",
+      "cv_mse": 121118.63635513435,
+      "best_params": "{'subsample': 0.9, 'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 3, 'learning_rate': 0.2}"
+    },
+    "AdaBoost": {
+      "train_mse": "93253.06950141366",
+      "test_mse": "511807.08163081825",
+      "train_r2": "0.9563376282296568",
+      "test_r2": "0.74768484427124",
+      "cv_mse": 168901.27412540672,
+      "best_params": "{'n_estimators': 50, 'loss': 'linear', 'learning_rate': 0.1}"
+    },
+    "SVR": {
+      "train_mse": "1456935.810834451",
+      "test_mse": "1272664.1913161888",
+      "train_r2": "0.3178425830024204",
+      "test_r2": "0.3725908156659924",
+      "cv_mse": 1604195.0693478968,
+      "best_params": "{'kernel': 'rbf', 'gamma': 'scale', 'epsilon': 0.1, 'C': 10}"
+    },
+    "KNN": {
+      "train_mse": "6.677052256013828e-09",
+      "test_mse": "275278.53652717185",
+      "train_r2": "0.9999999999999969",
+      "test_r2": "0.8642907663736863",
+      "cv_mse": 451948.51712294976,
+      "best_params": "{'weights': 'distance', 'p': 2, 'n_neighbors': 5, 'algorithm': 'auto'}"
+    },
+    "MLP": {
+      "train_mse": "78290.2790243683",
+      "test_mse": "90264.19862269335",
+      "train_r2": "0.9633434128544793",
+      "test_r2": "0.95550076161579",
+      "cv_mse": 561641.9408234024,
+      "best_params": "{'solver': 'adam', 'learning_rate': 'adaptive', 'hidden_layer_sizes': (100,), 'alpha': 0.01, 'activation': 'relu'}"
+    }
+  },
+  "minmax": {
+    "LinearRegression": {
+      "train_mse": "264567.2828286867",
+      "test_mse": "2978135.061573957",
+      "train_r2": "0.8761259535702413",
+      "test_r2": "-0.4681872111811476",
+      "cv_mse": 1.3493522275875274e+18,
+      "best_params": "{}"
+    },
+    "Ridge": {
+      "train_mse": "301515.0300693114",
+      "test_mse": "249441.43515986105",
+      "train_r2": "0.8588265093297236",
+      "test_r2": "0.87702816780686",
+      "cv_mse": 342795.75439410715,
+      "best_params": "{'solver': 'lsqr', 'alpha': 1}"
+    },
+    "Lasso": {
+      "train_mse": "321370.63608841295",
+      "test_mse": "254359.44490317156",
+      "train_r2": "0.8495298410659692",
+      "test_r2": "0.8746036441165956",
+      "cv_mse": 333611.15848036367,
+      "best_params": "{'max_iter': 1000, 'alpha': 1}"
+    },
+    "ElasticNet": {
+      "train_mse": "391459.0384023157",
+      "test_mse": "299695.4005116576",
+      "train_r2": "0.8167134855831869",
+      "test_r2": "0.8522535260544963",
+      "cv_mse": 404730.2391793633,
+      "best_params": "{'max_iter': 1000, 'l1_ratio': 0.7, 'alpha': 0.01}"
+    },
+    "DecisionTree": {
+      "train_mse": "22547.170833067332",
+      "test_mse": "797237.982263732",
+      "train_r2": "0.9894431040120573",
+      "test_r2": "0.6069706089122557",
+      "cv_mse": 313536.6289706047,
+      "best_params": "{'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 10}"
+    },
+    "RandomForest": {
+      "train_mse": "19758.683668510384",
+      "test_mse": "56108.85221887602",
+      "train_r2": "0.9907487121159693",
+      "test_r2": "0.9723389646343744",
+      "cv_mse": 170810.0412043205,
+      "best_params": "{'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 10}"
+    },
+    "GradientBoosting": {
+      "train_mse": "10304.33402358635",
+      "test_mse": "86597.17366800115",
+      "train_r2": "0.9951753688603591",
+      "test_r2": "0.9573085638243023",
+      "cv_mse": 128366.51732745417,
+      "best_params": "{'subsample': 0.9, 'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 3, 'learning_rate': 0.2}"
+    },
+    "AdaBoost": {
+      "train_mse": "85866.66773381898",
+      "test_mse": "503041.08465544356",
+      "train_r2": "0.9597960432903745",
+      "test_r2": "0.7520063825448252",
+      "cv_mse": 178429.49725980326,
+      "best_params": "{'n_estimators': 100, 'loss': 'linear', 'learning_rate': 0.1}"
+    },
+    "SVR": {
+      "train_mse": "1523490.0391177759",
+      "test_mse": "1385813.687842186",
+      "train_r2": "0.2866809764866075",
+      "test_r2": "0.3168093818772719",
+      "cv_mse": 1694774.2505562028,
+      "best_params": "{'kernel': 'rbf', 'gamma': 'scale', 'epsilon': 0.1, 'C': 10}"
+    },
+    "KNN": {
+      "train_mse": "3.051535585823026e-08",
+      "test_mse": "226386.40929257957",
+      "train_r2": "0.9999999999999857",
+      "test_r2": "0.8883940371955719",
+      "cv_mse": 370557.9976393199,
+      "best_params": "{'weights': 'distance', 'p': 2, 'n_neighbors': 5, 'algorithm': 'auto'}"
+    },
+    "MLP": {
+      "train_mse": "438005.3022197826",
+      "test_mse": "375475.8690279962",
+      "train_r2": "0.7949198836547495",
+      "test_r2": "0.8148946043022361",
+      "cv_mse": 747475.5158431833,
+      "best_params": "{'solver': 'adam', 'learning_rate': 'adaptive', 'hidden_layer_sizes': (100,), 'alpha': 0.01, 'activation': 'relu'}"
+    }
+  },
+  "robust": {
+    "LinearRegression": {
+      "train_mse": "2132926.3695838554",
+      "test_mse": "2014976.6521445413",
+      "train_r2": "0.001334491127642834",
+      "test_r2": "0.006639091128489039",
+      "cv_mse": 1.168198937255328e+20,
+      "best_params": "{}"
+    },
+    "Ridge": {
+      "train_mse": "2135473.4065518137",
+      "test_mse": "2028617.759358308",
+      "train_r2": "0.00014193333193268654",
+      "test_r2": "-8.582186018468718e-05",
+      "cv_mse": 24510302318823.395,
+      "best_params": "{'solver': 'lsqr', 'alpha': 0.1}"
+    },
+    "Lasso": {
+      "train_mse": "268146.40893443226",
+      "test_mse": "262850.8680041433",
+      "train_r2": "0.8744501574224305",
+      "test_r2": "0.8704174676861063",
+      "cv_mse": 10120921034194.307,
+      "best_params": "{'max_iter': 1000, 'alpha': 1}"
+    },
+    "ElasticNet": {
+      "train_mse": "268133.18340917473",
+      "test_mse": "263796.7800757913",
+      "train_r2": "0.8744563497955473",
+      "test_r2": "0.8699511436350535",
+      "cv_mse": 10425997065632.795,
+      "best_params": "{'max_iter': 1000, 'l1_ratio': 0.7, 'alpha': 0.01}"
+    },
+    "DecisionTree": {
+      "train_mse": "22547.273800716215",
+      "test_mse": "797230.0069285451",
+      "train_r2": "0.9894430558011855",
+      "test_r2": "0.6069745406631282",
+      "cv_mse": 313481.13559876377,
+      "best_params": "{'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 10}"
+    },
+    "RandomForest": {
+      "train_mse": "19801.302673752496",
+      "test_mse": "58929.02889496515",
+      "train_r2": "0.9907287573106066",
+      "test_r2": "0.9709486491370923",
+      "cv_mse": 169806.23299318648,
+      "best_params": "{'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 10}"
+    },
+    "GradientBoosting": {
+      "train_mse": "10304.334023586354",
+      "test_mse": "85378.52831010483",
+      "train_r2": "0.9951753688603591",
+      "test_r2": "0.957909342329117",
+      "cv_mse": 127938.53834613542,
+      "best_params": "{'subsample': 0.9, 'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 3, 'learning_rate': 0.2}"
+    },
+    "AdaBoost": {
+      "train_mse": "85866.66773381896",
+      "test_mse": "503041.0846554436",
+      "train_r2": "0.9597960432903745",
+      "test_r2": "0.7520063825448252",
+      "cv_mse": 180760.5421104559,
+      "best_params": "{'n_estimators': 100, 'loss': 'linear', 'learning_rate': 0.1}"
+    },
+    "SVR": {
+      "train_mse": "2333804.2131001707",
+      "test_mse": "2253259.8203822216",
+      "train_r2": "-0.0927192824470835",
+      "test_r2": "-0.11083184051602624",
+      "cv_mse": 2358565.1878049155,
+      "best_params": "{'kernel': 'rbf', 'gamma': 0.1, 'epsilon': 0.1, 'C': 10}"
+    },
+    "KNN": {
+      "train_mse": "1.233813813901315e-05",
+      "test_mse": "1046163.7867458628",
+      "train_r2": "0.9999999999942231",
+      "test_r2": "0.4842529768648728",
+      "cv_mse": 1083739.8097777802,
+      "best_params": "{'weights': 'distance', 'p': 2, 'n_neighbors': 5, 'algorithm': 'auto'}"
+    },
+    "MLP": {
+      "train_mse": "265871763923127.44",
+      "test_mse": "347949126142355.25",
+      "train_r2": "-124484821.44836466",
+      "test_r2": "-171535018.93085334",
+      "cv_mse": 2.7537425997632144e+24,
+      "best_params": "{'solver': 'adam', 'learning_rate': 'adaptive', 'hidden_layer_sizes': (50,), 'alpha': 0.001, 'activation': 'relu'}"
+    }
+  },
+  "power": {
+    "LinearRegression": {
+      "train_mse": "646516.0305299403",
+      "test_mse": "589336.1870592051",
+      "train_r2": "0.6972922882709311",
+      "test_r2": "0.709463864117266",
+      "cv_mse": 694211.7923705376,
+      "best_params": "{}"
+    },
+    "Ridge": {
+      "train_mse": "649832.2844314451",
+      "test_mse": "590227.7548670012",
+      "train_r2": "0.6957395725104042",
+      "test_r2": "0.7090243311792886",
+      "cv_mse": 694945.2346785805,
+      "best_params": "{'solver': 'lsqr', 'alpha': 0.1}"
+    },
+    "Lasso": {
+      "train_mse": "654337.3258794369",
+      "test_mse": "585980.3542434862",
+      "train_r2": "0.6936302500441872",
+      "test_r2": "0.7111182520886083",
+      "cv_mse": 702070.6020425046,
+      "best_params": "{'max_iter': 1000, 'alpha': 0.01}"
+    },
+    "ElasticNet": {
+      "train_mse": "673360.0938545023",
+      "test_mse": "572039.682490253",
+      "train_r2": "0.6847235280256087",
+      "test_r2": "0.7179908470381986",
+      "cv_mse": 710629.1206666343,
+      "best_params": "{'max_iter': 1000, 'l1_ratio': 0.7, 'alpha': 0.01}"
+    },
+    "DecisionTree": {
+      "train_mse": "22547.170833067332",
+      "test_mse": "772756.9903097688",
+      "train_r2": "0.9894431040120573",
+      "test_r2": "0.6190394636017544",
+      "cv_mse": 309898.96885846386,
+      "best_params": "{'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 10}"
+    },
+    "RandomForest": {
+      "train_mse": "19938.906651715817",
+      "test_mse": "55194.886930188266",
+      "train_r2": "0.990664329232528",
+      "test_r2": "0.9727895392794362",
+      "cv_mse": 171155.07458650932,
+      "best_params": "{'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 10}"
+    },
+    "GradientBoosting": {
+      "train_mse": "10353.748195433427",
+      "test_mse": "86904.54930100162",
+      "train_r2": "0.9951522324643836",
+      "test_r2": "0.9571570310818076",
+      "cv_mse": 127728.01424530339,
+      "best_params": "{'subsample': 0.9, 'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 3, 'learning_rate': 0.2}"
+    },
+    "AdaBoost": {
+      "train_mse": "85438.64102039422",
+      "test_mse": "502188.2058427637",
+      "train_r2": "0.9599964512939836",
+      "test_r2": "0.7524268422417747",
+      "cv_mse": 179282.59953879405,
+      "best_params": "{'n_estimators': 100, 'loss': 'linear', 'learning_rate': 0.1}"
+    },
+    "SVR": {
+      "train_mse": "1672630.6891533488",
+      "test_mse": "1534583.781924674",
+      "train_r2": "0.2168512696175472",
+      "test_r2": "0.24346739267189044",
+      "cv_mse": 1773674.242953852,
+      "best_params": "{'kernel': 'rbf', 'gamma': 'scale', 'epsilon': 0.1, 'C': 10}"
+    },
+    "KNN": {
+      "train_mse": "2.5152099790976053e-08",
+      "test_mse": "571094.0787235853",
+      "train_r2": "0.9999999999999882",
+      "test_r2": "0.7184570190983511",
+      "cv_mse": 659842.2520244244,
+      "best_params": "{'weights': 'distance', 'p': 2, 'n_neighbors': 5, 'algorithm': 'auto'}"
+    },
+    "MLP": {
+      "train_mse": "384798.2766579793",
+      "test_mse": "313973.02509376674",
+      "train_r2": "0.8198321459887887",
+      "test_r2": "0.8452148171362985",
+      "cv_mse": 547424.442935905,
+      "best_params": "{'solver': 'adam', 'learning_rate': 'adaptive', 'hidden_layer_sizes': (100,), 'alpha': 0.01, 'activation': 'relu'}"
+    }
+  },
+  "quantile": {
+    "LinearRegression": {
+      "train_mse": "776328.5516653627",
+      "test_mse": "786991.7541798513",
+      "train_r2": "0.6365122776121461",
+      "test_r2": "0.6120218845342715",
+      "cv_mse": 1098897.907527888,
+      "best_params": "{}"
+    },
+    "Ridge": {
+      "train_mse": "862279.075712007",
+      "test_mse": "773500.0489191643",
+      "train_r2": "0.5962690582216733",
+      "test_r2": "0.618673144034335",
+      "cv_mse": 891222.860295111,
+      "best_params": "{'solver': 'auto', 'alpha': 0.1}"
+    },
+    "Lasso": {
+      "train_mse": "866389.3757537269",
+      "test_mse": "769300.710060615",
+      "train_r2": "0.5943445591197267",
+      "test_r2": "0.620743371032126",
+      "cv_mse": 891494.3139124651,
+      "best_params": "{'max_iter': 1000, 'alpha': 0.01}"
+    },
+    "ElasticNet": {
+      "train_mse": "870721.0933387426",
+      "test_mse": "758118.6815806421",
+      "train_r2": "0.5923163892738191",
+      "test_r2": "0.6262559857624609",
+      "cv_mse": 894903.91826932,
+      "best_params": "{'max_iter': 1000, 'l1_ratio': 0.7, 'alpha': 0.01}"
+    },
+    "DecisionTree": {
+      "train_mse": "98089.72655881279",
+      "test_mse": "146617.74591933918",
+      "train_r2": "0.9540730387668659",
+      "test_r2": "0.927719094318975",
+      "cv_mse": 319093.83476889913,
+      "best_params": "{'min_samples_split': 10, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 10}"
+    },
+    "RandomForest": {
+      "train_mse": "15761.155867313551",
+      "test_mse": "57400.02365946612",
+      "train_r2": "0.9926204097013821",
+      "test_r2": "0.9717024315835481",
+      "cv_mse": 167566.6080611988,
+      "best_params": "{'n_estimators': 50, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': None}"
+    },
+    "GradientBoosting": {
+      "train_mse": "10539.082698245986",
+      "test_mse": "69091.32874016398",
+      "train_r2": "0.9950654562970473",
+      "test_r2": "0.9659387491962134",
+      "cv_mse": 146139.3747654533,
+      "best_params": "{'subsample': 0.9, 'n_estimators': 100, 'max_features': 'sqrt', 'max_depth': 3, 'learning_rate': 0.2}"
+    },
+    "AdaBoost": {
+      "train_mse": "94609.30560375168",
+      "test_mse": "484393.00713393145",
+      "train_r2": "0.95570261980339",
+      "test_r2": "0.7611996757851018",
+      "cv_mse": 173614.283366586,
+      "best_params": "{'n_estimators': 50, 'loss': 'linear', 'learning_rate': 0.1}"
+    },
+    "SVR": {
+      "train_mse": "1659959.3721420402",
+      "test_mse": "1527592.544784861",
+      "train_r2": "0.2227841547989755",
+      "test_r2": "0.24691399423521365",
+      "cv_mse": 1771343.3757638622,
+      "best_params": "{'kernel': 'rbf', 'gamma': 'scale', 'epsilon': 0.1, 'C': 10}"
+    },
+    "KNN": {
+      "train_mse": "2.1061170265672212e-08",
+      "test_mse": "473833.37288053706",
+      "train_r2": "0.9999999999999901",
+      "test_r2": "0.7664054571365327",
+      "cv_mse": 585105.6782763151,
+      "best_params": "{'weights': 'distance', 'p': 2, 'n_neighbors': 5, 'algorithm': 'auto'}"
+    },
+    "MLP": {
+      "train_mse": "201169.38809042991",
+      "test_mse": "133998.30916662715",
+      "train_r2": "0.9058097212394318",
+      "test_r2": "0.9339403352195973",
+      "cv_mse": 341637.9030119768,
+      "best_params": "{'solver': 'adam', 'learning_rate': 'adaptive', 'hidden_layer_sizes': (100,), 'alpha': 0.01, 'activation': 'relu'}"
+    }
+  }
+}
